@@ -1,0 +1,82 @@
+.land {
+  height: 100vh;
+  margin-right: auto;
+  color: white;
+  background: url("/images/Group 36.svg");
+  background-size: 70%;
+  background-repeat: no-repeat;
+  font-size: 1.5rem;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 8vh;
+}
+.logo {
+  width: 3rem;
+  height: 3rem;
+  img {
+    width: 100%;
+  }
+}
+
+.lists {
+  width: 30%;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+}
+.getbtn {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.getstarted {
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background-color: #167fff;
+  color: #fff;
+}
+// landing area
+.landeing {
+  display: flex;
+  position: relative;
+}
+
+// text area
+.textarea {
+  align-self: center;
+  width: 40%;
+  padding-top: 8rem;
+  p {
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+  }
+  a {
+    color: #167fff;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-weight: 600;
+  }
+}
+.imagecontainer {
+  width: 60%;
+
+  height: 100%;
+  .laptop1 {
+    position: absolute;
+    top: 40%;
+    width: 40rem;
+    height: 40rem;
+  }
+  .laptop2 {
+    position: absolute;
+    top: 100%;
+    left: 65%;
+    width: 20rem;
+    height: 20rem;
+  }
+}

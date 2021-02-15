@@ -1,9 +1,9 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Home.module.scss";
 
 export default function Home() {
   return (
-    <>
+    <div>
       <header className={styles.land}>
         <Head>
           <title>EnspireTech - Revolutionizing Technology</title>
@@ -17,10 +17,10 @@ export default function Home() {
         </Head>
         <div className="wrapper">
           <navbar className={styles.navbar}>
-            <div className="logo">
+            <div className={styles.logo}>
               <img src="/images/Logo.png" alt="" />
             </div>
-            <ul className="lists">
+            <ul className={styles.lists}>
               <li>
                 <a href="#">Home</a>
               </li>
@@ -31,27 +31,35 @@ export default function Home() {
                 <a href="#">Contact</a>
               </li>
             </ul>
-            <a href="#" className="">
-              Get Started <i className="fas fa-arrow-right"></i>
-            </a>
+            <div className={styles.getbtn}>
+              <a href="#" className={styles.getstarted}>
+                Get Started <i className="fas fa-arrow-right"></i>
+              </a>
+            </div>
           </navbar>
-
-          <div className="text-area">
-            <h1>EnspireTech</h1>
-            <h5>Revolutionizing Technology</h5>
-            <p>
-              We provide every serivce that your company would ever need.
-              <br /> Take your company to better path.
-            </p>
-            <a href="#">View More</a>
-          </div>
-          <div className="image-container">
-            <img src="/images/laptop.svg" alt="" className="laptop1" />
-            <img src="/images/laptop-2.svg" alt="" className="laptop2" />
-          </div>
+          {/* Text area  */}
+          <section className={styles.landeing}>
+            <div className={styles.textarea}>
+              <h1>EnspireTech</h1>
+              <h5>Revolutionizing Technology</h5>
+              <p>
+                We provide every serivce that your company would ever need. Take
+                your company to better path.
+              </p>
+              <a href="#">View More</a>
+            </div>
+            <div className={styles.imagecontainer}>
+              <img src="/images/laptop.svg" alt="" className={styles.laptop1} />
+              <img
+                src="/images/laptop-2.svg"
+                alt=""
+                className={styles.laptop2}
+              />
+            </div>
+          </section>
         </div>
       </header>
-      <div>
+      {/* <div>
         <div className="wrappper">
           <div className="soltion">
             <div className="line"></div>
@@ -66,8 +74,9 @@ export default function Home() {
             <img src="/images/polygon.svg" alt="" />
           </div>
         </div>
-      </div>
-      /* services */
-    </>
+      </div> */}
+    </div>
   );
 }
+
+const services = () => {};
