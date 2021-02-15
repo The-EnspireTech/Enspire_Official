@@ -41,7 +41,7 @@ export default function Home() {
           <section className={styles.landeing}>
             <div className={styles.textarea}>
               <h1>EnspireTech</h1>
-              <h5>Revolutionizing Technology</h5>
+              <h4>Revolutionizing Technology</h4>
               <p>
                 We provide every serivce that your company would ever need. Take
                 your company to better path.
@@ -59,22 +59,23 @@ export default function Home() {
           </section>
         </div>
       </header>
-      {/* <div>
-        <div className="wrappper">
-          <div className="soltion">
-            <div className="line"></div>
-            <h5>The best solution for your problems</h5>
+      <div className="wrapper">
+        <section className={styles.solutioncont}>
+          <div className={styles.soltion}>
+            <h5>
+              <span>The</span> best solution for your problems
+            </h5>
             <p>
               We offer Web Design , Web Development, Mobile App Development,
               Digital marketing for any kind of product or company that conveys
               the intended message.
             </p>
           </div>
-          <div>
+          <div className={styles.solimg}>
             <img src="/images/polygon.svg" alt="" />
           </div>
-        </div>
-      </div> */}
+        </section>
+      </div>
     </div>
   );
 }

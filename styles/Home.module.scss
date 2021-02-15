@@ -1,3 +1,5 @@
+$primary-pup: #237fec;
+
 .land {
   height: 100vh;
   margin-right: auto;
@@ -78,5 +80,29 @@
     left: 65%;
     width: 20rem;
     height: 20rem;
+  }
+}
+
+// solution section
+.solutioncont {
+  display: flex;
+  align-items: center;
+}
+.soltion {
+  width: 80%;
+
+  font-weight: 300;
+  span {
+    border-top: solid 3px $primary-pup;
+  }
+  p {
+    padding-top: 0.3rem;
+  }
+}
+.solimg {
+  width: 20%;
+  height: 20rem;
+  img {
+    width: 100%;
   }
 }
