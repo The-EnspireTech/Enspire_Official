@@ -63,7 +63,7 @@ export default function Home() {
         <section className={styles.solutioncont}>
           <div className={styles.soltion}>
             <h5>
-              <span>The</span> best solution for your problems
+              <span>The best solution</span> for your problems
             </h5>
             <p>
               We offer Web Design , Web Development, Mobile App Development,
@@ -76,8 +76,75 @@ export default function Home() {
           </div>
         </section>
       </div>
+      <section className={styles.servicescont}>
+        <div className="wrapper">
+          <div className={styles.serviceswrapper}></div>
+          <Servicesleft
+            title="Web"
+            subtitle="Development"
+            description="We Convert Any thing "
+            images="lappoo 1.png"
+          />
+          <Servicesright
+            title="Mobile"
+            subtitle="Development"
+            description="Any Mobile Apps"
+            images="image 2.png"
+          />
+          <Servicesleft
+            title="Digital"
+            subtitle="Marketing"
+            description="Fb"
+            images="digital.png"
+          />
+          <Servicesright
+            title="Artificial"
+            subtitle="Intelligence"
+            description="AI"
+            images="robot.png"
+          />
+          <Servicesleft
+            title="Graphics"
+            subtitle="Design"
+            description="Figma.AI"
+            images="graphics.png"
+          />
+        </div>
+      </section>
     </div>
   );
 }
 
-const services = () => {};
+const Servicesleft = ({ title, subtitle, description, images }) => {
+  return (
+    <div className={styles.servicessec}>
+      <img src={`/images/${images}`} alt="" />
+      <div className={styles.servicestext}>
+        <h3>
+          <span>{title} </span>
+          {subtitle}
+        </h3>
+        <p>{description}</p>
+        <a href="#">Book Now</a>
+      </div>
+    </div>
+  );
+};
+
+const Servicesright = ({ title, subtitle, description, images }) => {
+  return (
+    <div className={styles.servicessec}>
+      <div className={styles.servicestext}>
+        <h3>
+          <span>{title} </span>
+          {subtitle}
+        </h3>
+        <p>{description}</p>
+        <a href="#">Book Now</a>
+      </div>
+      <div className={styles.servimg}>
+        <img src={`/images/${images}`} alt="" />
+      </div>
+    </div>
+  );
+};

@@ -106,3 +106,36 @@ $primary-pup: #237fec;
     width: 100%;
   }
 }
+.serviceswrapper {
+}
+//ServicesLeft
+.servicessec {
+  padding: 7rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  a {
+    background-color: $primary-pup;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    border-radius: 1rem;
+  }
+  img {
+    width: 32rem;
+    height: 25rem;
+  }
+  .servicestext {
+    padding: 1rem 0;
+    p {
+      text-align: left;
+      padding: 1rem 0 4rem;
+    }
+    span {
+      border-bottom: solid 0.3rem $primary-pup;
+    }
+  }
+  .servimg {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
