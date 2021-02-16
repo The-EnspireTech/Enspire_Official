@@ -106,13 +106,11 @@ $primary-pup: #237fec;
     width: 100%;
   }
 }
-.serviceswrapper {
-}
 //ServicesLeft
 .servicessec {
   padding: 7rem 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   a {
     background-color: $primary-pup;
     color: white;
@@ -137,5 +135,67 @@ $primary-pup: #237fec;
   .servimg {
     display: flex;
     justify-content: flex-end;
+  }
+}
+
+// About US
+.aboutmain {
+  h3 {
+    text-align: center;
+  }
+  span {
+    border-bottom: solid 3px $primary-pup;
+  }
+}
+.aboutcontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  align-items: center;
+
+  img {
+    width: 50rem;
+    height: 50rem;
+  }
+}
+
+// footer
+.footercontainer {
+  min-height: 30vh;
+  background: url("/images/Subtract.svg");
+  background-size: cover;
+}
+
+.footlogo {
+  margin-left: 0.4rem;
+  width: 6rem;
+  height: 4rem;
+  img {
+    width: 100%;
+  }
+}
+.footernav {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  h3 {
+    font-weight: 700;
+  }
+}
+.logosolo {
+  width: 40%;
+}
+.logosolo,
+.socialcont,
+.contactcont {
+  padding: 1rem 0;
+  i {
+    font-size: 2.5rem;
+    padding-left: 1rem;
+  }
+}
+.socialcont {
+  text-align: center;
+  .socailicons {
+    padding-top: 2rem;
   }
 }

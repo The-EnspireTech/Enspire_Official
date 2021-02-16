@@ -111,6 +111,29 @@ export default function Home() {
           />
         </div>
       </section>
+      <section className={styles.teamsmain}>
+        <div className="wrapper"></div>
+      </section>
+      <section className={styles.aboutmain}>
+        <h3>
+          <span>About </span>Our Compnay
+        </h3>
+        <div className="wrapper">
+          <div className={styles.aboutcontainer}>
+            <img src="/images/about.png" alt="" />
+
+            <div className={styles.abouttext}>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Commodi, rem.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <Footer />
+      </section>
     </div>
   );
 }
@@ -146,5 +169,45 @@ const Servicesright = ({ title, subtitle, description, images }) => {
         <img src={`/images/${images}`} alt="" />
       </div>
     </div>
+  );
+};
+
+const Footer = () => {
+  return (
+    <section className={styles.footercontainer}>
+      <div className="wrapper">
+        <div className={styles.footernav}>
+          <div className={styles.footlogo}>
+            <img src="/images/profile_logo.png" alt="" />
+          </div>
+          <div className={styles.logosolo}>
+            <h3>EnspireTech</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel enim
+              optio atque pariatur consequuntur.
+            </p>
+          </div>
+          <div className={styles.socialcont}>
+            <h3>Follow Us</h3>{" "}
+            <div className={styles.socialicons}>
+              <i className="fab fa-facebook"></i>
+              <i className="fab fa-twitter"></i>
+              <i className="fab fa-linkedin-in"></i>
+            </div>
+          </div>
+          <div className={styles.contactcont}>
+            <h3>Contact Us</h3>
+            <div className={styles.contactinfo}>
+              <p>
+                <i className="fas fa-phone-alt"></i> 9867433325
+              </p>
+              <p>
+                <i class="far fa-envelope"></i> support@enspiretech.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
