@@ -1,6 +1,11 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
+import SwiperCore, { Navigation, Pagination } from "swiper";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
 
+// install Swiper components
+SwiperCore.use([Navigation, Pagination]);
 export default function Home() {
   return (
     <div>
@@ -132,6 +137,11 @@ export default function Home() {
         </div>
       </section>
       <section>
+        <section className={styles.testomonailcont}>
+          <div className="wrapper">
+            <ClientSection />
+          </div>
+        </section>
         <Footer />
       </section>
     </div>
@@ -188,7 +198,7 @@ const Footer = () => {
             </p>
           </div>
           <div className={styles.socialcont}>
-            <h3>Follow Us</h3>{" "}
+            <h3>Follow Us</h3>
             <div className={styles.socialicons}>
               <i className="fab fa-facebook"></i>
               <i className="fab fa-twitter"></i>
@@ -202,9 +212,34 @@ const Footer = () => {
                 <i className="fas fa-phone-alt"></i> 9867433325
               </p>
               <p>
-                <i class="far fa-envelope"></i> support@enspiretech.com
+                <i className="far fa-envelope"></i> support@enspiretech.com
               </p>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const ClientSection = () => {
+  return (
+    <section className={styles.clientover}>
+      <div className={styles.clientconter}>
+        <span>
+          <i className="fas fa-quote-left"></i>
+        </span>
+        <p className={styles.clienttext}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ea sint
+          tenetur voluptatibus dicta, sit expedita quidem possimus doloribus?
+          Quisquam.
+        </p>
+
+        <div className={styles.clinetnamer}>
+          <img src="/images/Group 42.png" alt="" />
+          <div className={styles.clientfulld}>
+            <h5>Newsun</h5>
+            <p>CEO</p>
           </div>
         </div>
       </div>

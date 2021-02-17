@@ -199,3 +199,63 @@ $primary-pup: #237fec;
     padding-top: 2rem;
   }
 }
+
+.clientover {
+  color: #fff;
+  width: 100%;
+  // height: 40vh;
+  padding: 8rem 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .clientconter {
+    width: 80%;
+    margin: 0 auto;
+    background: #167fff;
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .clienttext {
+      padding: 2rem 5rem;
+    }
+    .clientinfoo {
+      display: inline-block;
+    }
+    p {
+      line-height: 1.7;
+    }
+    span {
+      font-size: 3rem;
+    }
+    img {
+      width: 8rem;
+      height: 8rem;
+      // margin-bottom: -7rem;
+    }
+    .clinetnamer {
+      text-align: center;
+      display: flex;
+      .clientfulld {
+        padding: 0 2rem;
+        display: flex;
+        width: 40%;
+        flex-direction: column;
+        justify-content: center;
+      }
+      h5 {
+        font-size: 2rem;
+      }
+      p {
+        text-align: center;
+        font-size: 1.4rem;
+      }
+    }
+    .quote {
+      font-size: 3rem;
+      text-align: right;
+    }
+  }
+}
