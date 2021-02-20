@@ -1,0 +1,43 @@
+.Landing-Container {
+  background: url("/images/Vector 1.svg");
+  min-height: 90vh;
+  background-size: cover;
+  overflow: hidden;
+}
+.Landing-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.text-area {
+  padding-top: 4rem;
+  color: white;
+  height: 60%;
+  margin-bottom: 3rem;
+  h1 {
+    font-size: 4.5rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  p {
+    margin-top: 0.5em;
+    font-size: 1.5rem;
+  }
+  a {
+    color: #237fec;
+  }
+}
+.imagecontainer {
+  position: relative;
+  .laptop1 {
+    width: 70%;
+  }
+  .laptop2 {
+    position: absolute;
+    top: 90%;
+    left: 55%;
+    transform: translate(-40%, -55%);
+    width: 40%;
+  }
+}

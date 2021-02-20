@@ -1,45 +1,13 @@
 $primary-pup: #237fec;
 
 .land {
-  height: 100vh;
+  height: 92vh;
   margin-right: auto;
   color: white;
   background: url("/images/Group 36.svg");
   background-size: 70%;
   background-repeat: no-repeat;
   font-size: 1.5rem;
-}
-.navbar {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 8vh;
-}
-.logo {
-  width: 3rem;
-  height: 3rem;
-  img {
-    width: 100%;
-  }
-}
-
-.lists {
-  width: 30%;
-  font-weight: 700;
-  display: flex;
-  justify-content: space-between;
-}
-.getbtn {
-  width: 50%;
-  display: flex;
-  justify-content: flex-end;
-}
-.getstarted {
-  padding: 1rem 2rem;
-  border-radius: 1rem;
-  background-color: #167fff;
-  color: #fff;
 }
 // landing area
 .landeing {
@@ -202,8 +170,6 @@ $primary-pup: #237fec;
 
 .clientover {
   color: #fff;
-  width: 100%;
-  // height: 40vh;
   padding: 8rem 0;
   position: relative;
   display: flex;
@@ -258,4 +224,28 @@ $primary-pup: #237fec;
       text-align: right;
     }
   }
+}
+
+//teams
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cardinfo {
+  padding: 0 4rem;
+}
+.cardimg {
+  width: 25rem;
+  height: 25rem;
+  img {
+    width: 100%;
+  }
+}
+.swipersection {
+  padding: 8rem 0;
+}
+.slide {
+  padding-left: 6rem;
+  padding-bottom: 5rem;
 }

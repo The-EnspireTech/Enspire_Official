@@ -1,79 +1,28 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.scss";
-import SwiperCore, { Navigation, Pagination } from "swiper";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import Landing from "../Components/Landing";
+import Services from "../Components/Services";
 
 // install Swiper components
-SwiperCore.use([Navigation, Pagination]);
+
 export default function Home() {
   return (
     <div>
-      <header className={styles.land}>
-        <Head>
-          <title>EnspireTech - Revolutionizing Technology</title>
-          <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-          <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-            integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-            crossorigin="anonymous"
-          />
-        </Head>
-        <div className="wrapper">
-          <navbar className={styles.navbar}>
-            <div className={styles.logo}>
-              <img src="/images/Logo.png" alt="" />
-            </div>
-            <ul className={styles.lists}>
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">Portfolio</a>
-              </li>
-              <li>
-                <a href="#">Contact</a>
-              </li>
-            </ul>
-            <div className={styles.getbtn}>
-              <a href="#" className={styles.getstarted}>
-                Get Started <i className="fas fa-arrow-right"></i>
-              </a>
-            </div>
-          </navbar>
-          {/* Text area  */}
-          <section className={styles.landeing}>
-            <div className={styles.textarea}>
-              <h1>EnspireTech</h1>
-              <h4>Revolutionizing Technology</h4>
-              <p>
-                We provide every serivce that your company would ever need. Take
-                your company to better path.
-              </p>
-              <a href="#">View More</a>
-            </div>
-            <div className={styles.imagecontainer}>
-              <img src="/images/laptop.svg" alt="" className={styles.laptop1} />
-              <img
-                src="/images/laptop-2.svg"
-                alt=""
-                className={styles.laptop2}
-              />
-            </div>
-          </section>
-        </div>
-      </header>
-      <div className="wrapper">
+      <Head>
+        <title>EnspireTech - Revolutionizing Technology</title>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+      </Head>
+      {/* <Landing /> */}
+      <Services />
+      {/* <div className="wrapper">
         <section className={styles.solutioncont}>
           <div className={styles.soltion}>
             <h5>
               <span>The best solution</span> for your problems
             </h5>
             <p>
-              We offer Web Design , Web Development, Mobile App Development,
-              Digital marketing for any kind of product or company that conveys
-              the intended message.
+              We are here standing with you to prioritize a quality service to
+              be delivered in time for your satisfaction and long term growth of
+              your business.
             </p>
           </div>
           <div className={styles.solimg}>
@@ -87,37 +36,48 @@ export default function Home() {
           <Servicesleft
             title="Web"
             subtitle="Development"
-            description="We Convert Any thing "
+            description="A trusted market leader in developing high performing websites with React, Python, Php and more for every business.From a single page portfolio website to a large e-commerce website , we have served it all. "
             images="lappoo 1.png"
           />
           <Servicesright
             title="Mobile"
             subtitle="Development"
-            description="Any Mobile Apps"
+            description="We build Native, Web and hybrid apps for multiple platforms(Android and iOS) with an eye-catching UI and UX designs using various programming languages and Artifical Intelligence techniques."
             images="image 2.png"
           />
           <Servicesleft
             title="Digital"
             subtitle="Marketing"
-            description="Fb"
+            description="We provide a social media management,Search Engine Optimization(SEO) and Google ads services with guranteed result. If we can't satisfy you we don't charge for a service commission."
             images="digital.png"
           />
           <Servicesright
             title="Artificial"
             subtitle="Intelligence"
-            description="AI"
+            description="We use the AI/ML techniques for predictive analytics that includes customer churn, Segmentation, Recommendation system, fraud detection and more to help you automate your business and accomplish your business objectives."
             images="robot.png"
           />
           <Servicesleft
             title="Graphics"
             subtitle="Design"
-            description="Figma.AI"
+            description="We not only sketch your ideas into an art that looks stunning but also focuses on solving the core of the problem. Our domain experts create designs based on Market analysis and customers expectations to ensure delightful user experience and help you achieving your business goal."
             images="graphics.png"
           />
         </div>
       </section>
       <section className={styles.teamsmain}>
-        <div className="wrapper"></div>
+        <div className="wrapper">
+          <div className={styles.teamshead}>
+            <div className="services-head">
+              <h2 className="services_title">
+                <span>Our Team</span>
+              </h2>
+              <p className="services-desc">
+                Best professionals for best result
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
       <section className={styles.aboutmain}>
         <h3>
@@ -129,8 +89,14 @@ export default function Home() {
 
             <div className={styles.abouttext}>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Commodi, rem.
+                Enspiretech is and Information Technology company for digital
+                Marketing, Graphic designing ,Mobile and web development and
+                Artificial Intelligence that mainly focuses on timeliness,
+                security , scale and performance. <br /> <br /> We are the team
+                of professional designers , developers ,analysts and engineers
+                with diverse functional and technical proficiencies. we use the
+                cutting edge technologies to find the solution for your problems
+                and provide you a quality service at affordable price.
               </p>
             </div>
           </div>
@@ -139,30 +105,16 @@ export default function Home() {
       <section>
         <section className={styles.testomonailcont}>
           <div className="wrapper">
-            <ClientSection />
+            <div className="">
+              <div className="title"></div>
+            </div>
           </div>
         </section>
         <Footer />
-      </section>
+      </section> */}
     </div>
   );
 }
-
-const Servicesleft = ({ title, subtitle, description, images }) => {
-  return (
-    <div className={styles.servicessec}>
-      <img src={`/images/${images}`} alt="" />
-      <div className={styles.servicestext}>
-        <h3>
-          <span>{title} </span>
-          {subtitle}
-        </h3>
-        <p>{description}</p>
-        <a href="#">Book Now</a>
-      </div>
-    </div>
-  );
-};
 
 const Servicesright = ({ title, subtitle, description, images }) => {
   return (
@@ -192,10 +144,7 @@ const Footer = () => {
           </div>
           <div className={styles.logosolo}>
             <h3>EnspireTech</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel enim
-              optio atque pariatur consequuntur.
-            </p>
+            <p></p>
           </div>
           <div className={styles.socialcont}>
             <h3>Follow Us</h3>
@@ -229,6 +178,7 @@ const ClientSection = () => {
         <span>
           <i className="fas fa-quote-left"></i>
         </span>
+
         <p className={styles.clienttext}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ea sint
           tenetur voluptatibus dicta, sit expedita quidem possimus doloribus?
@@ -244,5 +194,19 @@ const ClientSection = () => {
         </div>
       </div>
     </section>
+  );
+};
+
+const Teamcard = () => {
+  return (
+    <div className={styles.card}>
+      <div className={styles.cardimg}>
+        <img src="/images/image 1.png" alt="" />
+      </div>
+      <div className={styles.cardinfo}>
+        <h3>Newsun</h3>
+        <p>Full Stack Developer</p>
+      </div>
+    </div>
   );
 };

@@ -1,0 +1,12 @@
+.Serviceleft-Container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  .service-img {
+    width: 70%;
+  }
+  .Service-text {
+    flex: 1 0 30rem;
+  }
+}
