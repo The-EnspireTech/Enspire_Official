@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Landing from "../Components/Landing";
 import Services from "../Components/Services";
+import Teams from "../Components/Teams";
+import Testomonial from "../Components/Testomonial";
 
 // install Swiper components
 
@@ -12,7 +14,9 @@ export default function Home() {
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
       {/* <Landing /> */}
-      <Services />
+      {/* <Services /> */}
+      {/* <Teams /> */}
+      <Testomonial />
       {/* <div className="wrapper">
         <section className={styles.solutioncont}>
           <div className={styles.soltion}>
