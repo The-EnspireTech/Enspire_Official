@@ -6,32 +6,31 @@
   .service-img {
     width: 70%;
   }
-  .Service-text {
-    flex: 1 0 30rem;
-  }
 }
-
 .order {
-  order: -1;
+  order: 2;
 }
 // for High Screen
 @media (min-width: 728px) {
   .Serviceleft-Container {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-    img {
-      width: 40rem;
-      height: 30rem;
+    .service-img {
+      width: 45%;
     }
+
     .Service-text {
-      flex: 1 1 30rem;
+      width: 65%;
       padding: 2em 2em;
       text-align: left;
       p {
         padding: 1em 0;
       }
     }
+  }
+  .order {
+    order: -1;
   }
 }

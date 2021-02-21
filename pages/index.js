@@ -4,7 +4,7 @@ import Landing from "../Components/Landing";
 import Services from "../Components/Services";
 import Teams from "../Components/Teams";
 import Testomonial from "../Components/Testomonial";
-
+import styles from "../styles/Home.module.scss";
 // install Swiper components
 
 export default function Home() {
@@ -14,12 +14,8 @@ export default function Home() {
         <title>EnspireTech - Revolutionizing Technology</title>
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
-      {/* <Landing /> */}
-      {/* <Services /> */}
-      {/* <Teams /> */}
-      {/* <Testomonial /> */}
-      <About />
-      {/* <div className="wrapper">
+      <Landing />
+      <div className="wrapper">
         <section className={styles.solutioncont}>
           <div className={styles.soltion}>
             <h5>
@@ -31,11 +27,17 @@ export default function Home() {
               your business.
             </p>
           </div>
-          <div className={styles.solimg}>
+          <div className={styles.sou}>
             <img src="/images/polygon.svg" alt="" />
           </div>
         </section>
       </div>
+      <Services />
+      <Teams />
+      <About />
+      <Testomonial />
+
+      {/* 
       <section className={styles.servicescont}>
         <div className="wrapper">
           <div className={styles.serviceswrapper}></div>
@@ -121,24 +123,6 @@ export default function Home() {
     </div>
   );
 }
-
-const Servicesright = ({ title, subtitle, description, images }) => {
-  return (
-    <div className={styles.servicessec}>
-      <div className={styles.servicestext}>
-        <h3>
-          <span>{title} </span>
-          {subtitle}
-        </h3>
-        <p>{description}</p>
-        <a href="#">Book Now</a>
-      </div>
-      <div className={styles.servimg}>
-        <img src={`/images/${images}`} alt="" />
-      </div>
-    </div>
-  );
-};
 
 const Footer = () => {
   return (

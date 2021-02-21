@@ -1,5 +1,9 @@
 import React from "react";
-
+import { Autoplay, Navigation, Pagination } from "swiper";
+import SwiperCore from "swiper";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+SwiperCore.use([Autoplay, Navigation, Pagination]);
 const Testomonial = () => {
   return (
     <div className="Testomonial-container">
@@ -8,7 +12,22 @@ const Testomonial = () => {
           <h3>
             <span>What Our </span>Client Say?
           </h3>
-          <Clienter />
+          <div className="swiper-section">
+            <Swiper
+              className=".swiper-container"
+              slidesPerView={1}
+              autoplay={{ delay: 2500, disableOnInteraction: false }}
+              pagination={{ clickable: true }}
+              scrollbar={{ draggable: true }}
+            >
+              <SwiperSlide>
+                <Clienter />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Clienter />
+              </SwiperSlide>
+            </Swiper>
+          </div>
         </div>
       </div>
     </div>

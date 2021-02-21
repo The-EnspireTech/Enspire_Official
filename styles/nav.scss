@@ -1,7 +1,6 @@
 $primary-pup: #348bf3;
 .nav-wrap {
-  position: sticky;
-  background: $primary-pup;
+  background: #fff;
   top: 0;
   padding: 1rem 0;
   min-height: 8vh;
@@ -9,7 +8,7 @@ $primary-pup: #348bf3;
   z-index: 22;
 }
 .items {
-  color: white;
+  color: $primary-pup;
   width: 50%;
 }
 .flexnav {
@@ -18,8 +17,8 @@ $primary-pup: #348bf3;
   align-items: center;
 }
 .logo {
-  width: 3rem;
-  height: 3rem;
+  width: 3.2rem;
+  height: 3.2rem;
 }
 .lines {
   display: none;

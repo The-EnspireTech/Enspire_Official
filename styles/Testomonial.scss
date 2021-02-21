@@ -40,3 +40,15 @@
     font-size: 1.6rem;
   }
 }
+
+@media (min-width: 748px) {
+  .client-section {
+    padding: 5rem 0rem;
+    width: 80%;
+  }
+
+  .client-says {
+    margin: 2em auto;
+    width: 70%;
+  }
+}

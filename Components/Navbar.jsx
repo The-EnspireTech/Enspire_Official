@@ -13,7 +13,7 @@ const Navbar = () => {
 
       <nav className="wrapper flexnav">
         <a href="#" className="logo">
-          <img src="/images/Logo.png" alt="" />
+          <img src="/images/profile_logo.png.png" alt="" />
         </a>
         <ul className={`items flexnav ${open ? "menu" : ""}`}>
           <li>

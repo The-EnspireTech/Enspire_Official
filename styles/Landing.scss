@@ -26,6 +26,8 @@
   }
   a {
     color: #237fec;
+    background: #fff;
+    font-weight: bold;
   }
 }
 .imagecontainer {
@@ -39,5 +41,38 @@
     left: 55%;
     transform: translate(-40%, -55%);
     width: 40%;
+  }
+}
+
+// for Higher Screens
+@media (min-width: 748px) {
+  .Landing-Container {
+    background: url("/images/Group 36.svg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: 80%;
+  }
+  .Landing-content {
+    flex-direction: row;
+  }
+  .imagecontainer {
+    position: absolute;
+    top: 30%;
+    left: 60%;
+  }
+  .text-area {
+    margin-top: 7rem;
+    h1 {
+      font-size: 7rem;
+    }
+    h4 {
+      font-size: 4rem;
+    }
+    p {
+      width: 70%;
+      font-size: 2.5rem;
+      padding-right: 2em;
+      margin: 1em 0;
+    }
   }
 }
