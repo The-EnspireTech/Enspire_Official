@@ -15,7 +15,7 @@ const About = () => {
           </div>
           <div className="about-text">
             <p>
-              Enspiretech is and Information Technology company for digital
+              Enspiretech is an Information Technology company for digital
               Marketing, Graphic designing ,Mobile and web development and
               Artificial Intelligence that mainly focuses on timeliness,
               security , scale and performance. <br /> <br /> We are the team of

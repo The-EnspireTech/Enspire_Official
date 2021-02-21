@@ -26,6 +26,9 @@ const Testomonial = () => {
               <SwiperSlide>
                 <Clienter />
               </SwiperSlide>
+              <SwiperSlide>
+                <Clienter />
+              </SwiperSlide>
             </Swiper>
           </div>
         </div>
