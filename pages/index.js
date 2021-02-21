@@ -1,4 +1,5 @@
 import Head from "next/head";
+import About from "../Components/About";
 import Landing from "../Components/Landing";
 import Services from "../Components/Services";
 import Teams from "../Components/Teams";
@@ -16,7 +17,8 @@ export default function Home() {
       {/* <Landing /> */}
       {/* <Services /> */}
       {/* <Teams /> */}
-      <Testomonial />
+      {/* <Testomonial /> */}
+      <About />
       {/* <div className="wrapper">
         <section className={styles.solutioncont}>
           <div className={styles.soltion}>

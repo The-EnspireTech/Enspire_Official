@@ -15,22 +15,23 @@
   order: -1;
 }
 // for High Screen
-
-// .Serviceleft-Container {
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-//   flex-wrap: wrap;
-//   img {
-//     width: 40rem;
-//     height: 30rem;
-//   }
-//   .Service-text {
-//     flex: 1 1 30rem;
-//     padding: 2em 2em;
-//     text-align: left;
-//     p {
-//       padding: 1em 0;
-//     }
-//   }
-// }
+@media (min-width: 728px) {
+  .Serviceleft-Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    img {
+      width: 40rem;
+      height: 30rem;
+    }
+    .Service-text {
+      flex: 1 1 30rem;
+      padding: 2em 2em;
+      text-align: left;
+      p {
+        padding: 1em 0;
+      }
+    }
+  }
+}

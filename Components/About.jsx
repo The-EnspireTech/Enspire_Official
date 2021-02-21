@@ -5,7 +5,9 @@ const About = () => {
     <div className="About-Container">
       <div className="wrapper">
         <div className="About-wrap">
-          <img src="/images/about.png" alt="" className="about-img" />
+          <div className="aboute-img">
+            <img src="/images/about.png" alt="" className="about-img" />
+          </div>
           <div className="about-text">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
