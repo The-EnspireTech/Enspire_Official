@@ -1,5 +1,6 @@
 $primary-pup: #348bf3;
 .nav-wrap {
+  position: sticky;
   background: #fff;
   top: 0;
   padding: 1rem 0;
@@ -29,7 +30,7 @@ $primary-pup: #348bf3;
 }
 .line {
   z-index: 22;
-  background-color: #fff;
+  background-color: $primary-pup;
   width: 100%;
   height: 0.3em;
 }
@@ -76,5 +77,8 @@ $primary-pup: #348bf3;
   }
   .lines {
     display: flex;
+  }
+  .nav-wrap {
+    position: static;
   }
 }

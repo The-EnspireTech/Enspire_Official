@@ -23,18 +23,19 @@ const Teams = () => {
               autoplay={{ delay: 2500, disableOnInteraction: false }}
               pagination={{ clickable: true }}
               scrollbar={{ draggable: true }}
+              centeredSlides={true}
               breakpoints={{
                 1100: {
                   slidesPerView: 3,
                   spaceBetween: 20,
                 },
-                850: {
+                550: {
                   slidesPerView: 2,
                   spaceBetween: 10,
                 },
-                450: {
+                250: {
                   slidesPerView: 1,
-                  spaceBetween: 1,
+                  spaceBetween: 10,
                 },
               }}
             >
