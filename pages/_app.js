@@ -6,6 +6,8 @@ import "../styles/Team.scss";
 import "../styles/Testomonial.scss";
 import "../styles/About.scss";
 import "../styles/Footer.scss";
+import "../styles/Contact.scss";
+
 // Import Swiper styles
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";

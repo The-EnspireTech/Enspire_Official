@@ -18,7 +18,7 @@ const Services = () => {
             title="Mobile"
             subtitle="Development"
             description="We build Native, Web and hybrid apps for multiple platforms(Android and iOS) with an eye-catching UI and UX designs using various programming languages and Artifical Intelligence techniques."
-            images="lappoo 1.png"
+            images="mobileph.png"
             classes="order"
           />
           <Servicesleft
@@ -31,14 +31,14 @@ const Services = () => {
             title="Artificial"
             subtitle="Intelligence"
             description="We use the AI/ML techniques for predictive analytics that includes customer churn, Segmentation, Recommendation system, fraud detection and more to help you automate your business and accomplish your business objectives."
-            images="robot.png"
+            images="Group 1.png"
             classes="order"
           />
           <Servicesleft
             title="Graphics"
             subtitle="Design"
             description="We not only sketch your ideas into an art that looks stunning but also focuses on solving the core of the problem. Our domain experts create designs based on Market analysis and customers expectations to ensure delightful user experience and help you achieving your business goal."
-            images="graphics.png"
+            images="Group 40.png"
           />
         </div>
       </div>

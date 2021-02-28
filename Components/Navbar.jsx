@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import { useState } from "react";
 const Navbar = () => {
   const [open, setopen] = useState(false);
@@ -17,19 +18,19 @@ const Navbar = () => {
         </a>
         <ul className={`items flexnav ${open ? "menu" : ""}`}>
           <li>
-            <a href="#" className="item">
+            <Link href="/" className="item">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="item">
+            <Link href="#" className="item">
               Portfolio
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="item">
+            <Link href="/contact" className="item">
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
         <div
