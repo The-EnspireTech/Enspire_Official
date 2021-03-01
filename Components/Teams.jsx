@@ -12,7 +12,7 @@ const Teams = () => {
         <div className="team-head">
           <div className="Team-title">
             <h3>
-              <span>Our</span>Team
+              <span>Our</span> Team
             </h3>
           </div>
           <div className="swiper-section">

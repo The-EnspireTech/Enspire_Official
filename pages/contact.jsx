@@ -1,6 +1,10 @@
+import Head from "next/head";
 const Contact = () => {
   return (
     <section className="contact-section">
+      <Head>
+        <title>Contact Us - Enspire Tech</title>
+      </Head>
       <div className="wrapper">
         <div className="inner">
           <form action="">
