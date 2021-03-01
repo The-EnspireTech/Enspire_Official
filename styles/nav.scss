@@ -1,6 +1,6 @@
 $primary-pup: #348bf3;
 .nav-wrap {
-  // position: sticky;
+  position: static;
   background: #fff;
   top: 0;
   padding: 1rem 0;
@@ -55,6 +55,9 @@ $primary-pup: #348bf3;
 }
 
 @media (max-width: 756px) {
+  .nav-wrap {
+    position: sticky;
+  }
   .items {
     background-color: rgba(0, 0, 0, 0.822);
     position: absolute;
@@ -62,7 +65,7 @@ $primary-pup: #348bf3;
     justify-content: space-around;
     align-items: center;
     opacity: 0;
-    top: 100%;
+    top: 8%;
     left: 0%;
     width: 0%;
     height: 92vh;

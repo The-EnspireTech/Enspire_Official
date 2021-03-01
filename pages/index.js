@@ -19,7 +19,7 @@ export default function Home() {
         <section className={styles.solutioncont}>
           <div className={styles.soltion}>
             <h5>
-              <span>The best solution</span> for your problems
+              <span>The Best Solution</span> For Your Problems
             </h5>
             <p>
               We are here standing with you to prioritize a quality service to

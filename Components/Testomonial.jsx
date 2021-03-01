@@ -8,9 +8,9 @@ const Testomonial = () => {
   return (
     <div className="Testomonial-container">
       <div className="wrapper">
-        <div className="Testo-title">
+        <div className="Team-title">
           <h3>
-            <span>What Our </span>Client Say?
+            <span className="underline">What Our </span>Client Say?
           </h3>
           <div className="swiper-section">
             <Swiper

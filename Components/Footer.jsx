@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import Link from "next/link";
 const Footer = () => {
   return (
     <div className="footer-Container">
@@ -25,25 +26,46 @@ const Footer = () => {
         <div className="footer-items ">
           <h2>Quick Links</h2>
           <ul>
-            <a href="/">
-              <li>Home</li>
-            </a>
-            <a href="/">
-              <li>Portfolio</li>
-            </a>
-            <a href="/">
-              <li>Contact</li>
-            </a>
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="/contact">Contact</Link>
+            </li>
+            <li>
+              <Link href="/">Portfolio</Link>
+            </li>
           </ul>
         </div>
 
         <div className="footer-items">
           <h2>Contact US</h2>
           <ul>
-            <li>Kalanki,Kathmandu</li>
-            <li>+97798xxxxxxx</li>
-            <li>support@enspiretech.com</li>
+            <li>
+              <i className="fas fa-map-marker-alt"></i> Kalanki,Kathmandu
+            </li>
+            <li>
+              <i className="fas fa-phone-alt"></i> +97798xxxxxxx
+            </li>
+            <li>
+              <i class="far fa-envelope"></i> support@enspiretech.com
+            </li>
           </ul>
+          <div className="social-media">
+            <h2>Follow Us</h2>
+            <a href="#">
+              <i className="fab fa-facebook"></i>
+            </a>
+            <a href="#">
+              <i className="fab fa-twitter"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/enspire-tech"
+              target="_blank"
+            >
+              <i className="fab fa-linkedin-in"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>

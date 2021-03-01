@@ -1,5 +1,5 @@
 .footer-Container {
-  background-color: blue;
+  background-color: #237fec;
   color: white;
 }
 .inner-footer {
@@ -17,6 +17,12 @@
   p {
     text-align: justify;
   }
+  ul {
+    padding-top: 0.7rem;
+    li {
+      padding: 0.5rem 0;
+    }
+  }
 }
 .logo {
   display: flex;
@@ -26,4 +32,16 @@
   font-weight: bold;
   padding: 0 0.5rem;
   font-size: 2.5rem;
+}
+.social-media {
+  i {
+    padding-right: 0.9rem;
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-items {
+    flex-basis: 50%;
+  }
 }

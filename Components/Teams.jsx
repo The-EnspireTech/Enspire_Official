@@ -12,18 +12,17 @@ const Teams = () => {
         <div className="team-head">
           <div className="Team-title">
             <h3>
-              <span>Our</span> Team
+              <span className="underline">Our</span> Team
             </h3>
           </div>
           <div className="swiper-section">
             <Swiper
-              className=".swiper-container"
-              spaceBetween={30}
+              spaceBetween={50}
               slidesPerView={3}
+              loop={true}
               autoplay={{ delay: 2500, disableOnInteraction: false }}
-              pagination={{ clickable: true }}
-              scrollbar={{ draggable: true }}
-              centeredSlides={true}
+              onSlideChange={() => console.log("slide change")}
+              onSwiper={(swiper) => console.log(swiper)}
               breakpoints={{
                 1100: {
                   slidesPerView: 3,
@@ -52,7 +51,7 @@ const Teams = () => {
               <SwiperSlide>
                 <Person
                   name="Newsun Banjade"
-                  pose="FullStack"
+                  pose="Full Stack Developer"
                   image="image 1.png"
                 />
               </SwiperSlide>
