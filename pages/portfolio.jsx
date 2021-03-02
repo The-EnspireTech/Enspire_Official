@@ -22,14 +22,14 @@ const Portfolio = () => {
           />
 
           <Ports
-            images="Capture.JPG"
+            images="Capture.png"
             name="Aqua Water Filter"
-            site="https://aquawater.com"
+            site="https://aquastarnepal.com"
           />
           <Ports
             images="universal.JPG"
             name="Universal Gym"
-            site="https://universalgym.com"
+            site="https://universalmultigym.com"
           />
           <Ports
             images="rsinfintytravels.JPG"
@@ -49,7 +49,7 @@ const Ports = ({ images, name, site }) => {
         <img src={`/images/${images}`} alt="" />
       </div>
       <h4>{name}</h4>
-      <a href={site} className="visit-btn">
+      <a href={site} className="visit-btn" target="_blank">
         Visit Website
       </a>
     </div>
