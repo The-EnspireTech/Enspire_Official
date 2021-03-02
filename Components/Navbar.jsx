@@ -14,7 +14,7 @@ const Navbar = () => {
 
       <nav className="wrapper flexnav">
         <a href="#" className="logo">
-          <img src="/images/profile_logo.png.png" alt="" />
+          <img src="/images/Logowithname.png" alt="" />
         </a>
         <ul className={`items flexnav ${open ? "menu" : ""}`}>
           <li>
