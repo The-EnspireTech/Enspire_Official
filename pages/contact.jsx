@@ -30,7 +30,7 @@ const Contact = () => {
             </label>
             <button>
               Submit
-              <i class="zmdi zmdi-arrow-right"></i>
+              <i className="zmdi zmdi-arrow-right"></i>
             </button>
           </form>
         </div>

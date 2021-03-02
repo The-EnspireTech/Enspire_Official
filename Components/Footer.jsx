@@ -48,7 +48,7 @@ const Footer = () => {
               <i className="fas fa-phone-alt"></i> +97798xxxxxxx
             </li>
             <li>
-              <i class="far fa-envelope"></i> support@enspiretech.com
+              <i className="far fa-envelope"></i> support@enspiretech.com
             </li>
           </ul>
           <div className="social-media">
