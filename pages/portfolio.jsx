@@ -15,24 +15,41 @@ const Portfolio = () => {
           <span className="underline">Our </span>Work
         </h3>
         <div className="portfolio-containers">
-          <Ports />
-          <Ports />
-          <Ports />
-          <Ports />
+          <Ports
+            images="hospital.png"
+            name="Sagarmatha Hospital"
+            site="https://sagarmathahospital.com"
+          />
+
+          <Ports
+            images="Capture.JPG"
+            name="Aqua Water Filter"
+            site="https://aquawater.com"
+          />
+          <Ports
+            images="universal.JPG"
+            name="Universal Gym"
+            site="https://universalgym.com"
+          />
+          <Ports
+            images="rsinfintytravels.JPG"
+            name="RSinfinityTravels"
+            site="https://rsinfinitytravels.com"
+          />
         </div>
       </div>
     </div>
   );
 };
 
-const Ports = () => {
+const Ports = ({ images, name, site }) => {
   return (
     <div className="sitecontainer">
       <div className="site-image">
-        <img src="/images/hospital.png" alt="" />
+        <img src={`/images/${images}`} alt="" />
       </div>
-      <h4>Sagarmatha Hospital</h4>
-      <a href="#" className="visit-btn">
+      <h4>{name}</h4>
+      <a href={site} className="visit-btn">
         Visit Website
       </a>
     </div>
