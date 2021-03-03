@@ -10,22 +10,23 @@ const Navbar = () => {
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
 
       <nav className="wrapper flexnav">
-        <a href="#" className="logo">
-          <img src="/images/Logowithname.png" alt="" />
-        </a>
+        <Link href="/">
+          <a className="logo">
+            <img src="/images/Logowithname.png" alt="" />
+          </a>
+        </Link>
         <ul className={`items flexnav ${open ? "menu" : ""}`}>
           <li>
             <Link href="/" className="item">
               Home
             </Link>
           </li>
-          <li>
-            <Link href="/portfolio" className="item">
-              Portfolio
-            </Link>
+          <li onClick={() => setopen(false)}>
+            <Link href="/portfolio">Portfolio</Link>
           </li>
           <li>
             <Link href="/contact" className="item">

@@ -12,7 +12,11 @@ export default function Home() {
     <div>
       <Head>
         <title>EnspireTech - Revolutionizing Technology</title>
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+        <meta
+          name="description"
+          content="A complete digital solution to empower business with innovative technology."
+        />
       </Head>
       <Landing />
       <div className="wrapper">

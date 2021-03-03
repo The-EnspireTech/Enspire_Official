@@ -19,7 +19,7 @@ const Teams = () => {
             <Swiper
               spaceBetween={50}
               slidesPerView={3}
-              loop={true}
+              // loop={true}
               autoplay={{ delay: 2500, disableOnInteraction: false }}
               onSlideChange={() => console.log("slide change")}
               onSwiper={(swiper) => console.log(swiper)}
@@ -30,11 +30,9 @@ const Teams = () => {
                 },
                 550: {
                   slidesPerView: 2,
-                  spaceBetween: 10,
                 },
                 250: {
                   slidesPerView: 1,
-                  spaceBetween: 10,
                 },
               }}
             >
