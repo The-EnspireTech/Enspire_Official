@@ -49,3 +49,9 @@
     flex-basis: 50%;
   }
 }
+@media (max-width: 490px) {
+  .footer-items {
+    flex-basis: 100%;
+    padding: 1rem 0;
+  }
+}

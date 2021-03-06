@@ -1,6 +1,6 @@
 $primary-pup: #348bf3;
 .nav-wrap {
-  position: static;
+  position: sticky;
   background: #fff;
   top: 0;
   padding: 1rem 0;
@@ -65,7 +65,7 @@ $primary-pup: #348bf3;
     justify-content: space-around;
     align-items: center;
     opacity: 0;
-    top: 8%;
+    top: 90%;
     left: 0%;
     width: 0%;
     height: 92vh;
@@ -80,8 +80,5 @@ $primary-pup: #348bf3;
   }
   .lines {
     display: flex;
-  }
-  .nav-wrap {
-    position: static;
   }
 }

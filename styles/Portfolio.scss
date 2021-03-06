@@ -1,13 +1,16 @@
 .port-images {
   height: 50vh;
   img {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     object-fit: cover;
   }
 }
 .site-image {
-  width: 45rem;
+  max-width: 45rem;
+  img {
+    max-width: 100%;
+  }
 }
 .visit-btn {
   font-size: 1.6rem;
@@ -17,11 +20,14 @@
   padding: 1rem 2rem;
 }
 .portfolio-containers {
+  overflow: hidden;
   width: 80%;
   margin: 1rem auto;
   padding: 1rem 2rem;
   box-shadow: 0px 0px 1rem 0px rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
 }
 .sitecontainer {
   margin: 1.3rem 0;
@@ -32,10 +38,14 @@
 .margin-toper {
   margin: 1rem auto;
 }
-@media (min-width: 768px) {
+@media (max-width: 668px) {
   .portfolio-containers {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    width: 95%;
+  }
+}
+@media (max-width: 400px) {
+  .portfolio-containers {
+    width: 100%;
+    margin: 0;
   }
 }

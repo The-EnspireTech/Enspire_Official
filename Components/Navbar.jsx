@@ -28,7 +28,7 @@ const Navbar = () => {
           <li onClick={() => setopen(false)}>
             <Link href="/portfolio">Portfolio</Link>
           </li>
-          <li>
+          <li onClick={() => setopen(false)}>
             <Link href="/contact" className="item">
               Contact
             </Link>

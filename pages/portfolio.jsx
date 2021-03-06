@@ -46,7 +46,7 @@ const Ports = ({ images, name, site }) => {
   return (
     <div className="sitecontainer">
       <div className="site-image">
-        <img src={`/images/${images}`} alt="" />
+        <img src={`/images/${images}`} alt="" id="images" />
       </div>
       <h4>{name}</h4>
       <a href={site} className="visit-btn" target="_blank">
