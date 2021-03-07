@@ -18,10 +18,7 @@ const Footer = () => {
             <img src="/images/Logo.png" alt="" />
             <span className="footer-title">EnspireTech</span>
           </div>
-          <p>
-            A complete digital solution to empower business with innovative
-            technology.
-          </p>
+          <p>Revolutionizing Technology</p>
         </div>
         <div className="footer-items ">
           <h2>Quick Links</h2>
