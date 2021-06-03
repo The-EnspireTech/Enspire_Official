@@ -43,9 +43,7 @@ const Teams = () => {
                   image="Bishal.png"
                 />
               </SwiperSlide>
-              <SwiperSlide>
-                <Person name="Niraj Poudel" pose="AI/ML" image="Niraj.png" />
-              </SwiperSlide>
+             
               <SwiperSlide>
                 <Person
                   name="Newsun Banjade"
